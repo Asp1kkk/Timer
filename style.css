@@ -1,0 +1,111 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  background-color: #fff;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Mono', monospace;  
+  background: #121214;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+:root {
+    --primary: #6C38CC;
+    --anti-accent: #7C7C8A;
+}
+
+img {
+  display: block;
+}
+
+.main {
+    background: #202024;
+    border-radius: 8px;
+    padding: 160px 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.setter { 
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 160%;
+}
+
+.setter input {
+    width: 45px;
+    background: none;
+    border: none;
+    text-align: center;
+    font-weight: 700;
+    color: var(--anti-accent);
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+.setter input::-webkit-outer-spin-button,
+.setter input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.num {
+    font-family: 'Roboto Mono', monospace; 
+    font-size: 160px;
+    line-height: 1;
+    background: #29292e;
+    padding: 40px 18px;
+}
+
+.dots {
+    font-family: 'Roboto Mono', monospace; 
+    font-size: 160px;
+    color: var(--primary);
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 8px;
+    background: var(--primary);
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    gap: 10px;
+    padding: 20px;
+    width: 100%;
+    cursor: pointer;
+}

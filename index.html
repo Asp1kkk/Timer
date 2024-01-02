@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Таймер</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="main">
+        <section class="mainSection">
+            <form  class="timer" onsubmit="app.submit(event)">
+                <div class="setter">
+                    Установите таймер на
+                    <input type="number" name="time" aria-label="Число Минут" value="10">
+                    минут.
+                </div>
+                <div class="count">
+                    <div class="num" id="min-ten">0</div>
+                    <div class="num" id="min">0</div>
+                    <div class="dots">:</div>
+                    <div class="num" id="sec-ten">0</div>
+                    <div class="num" id="sec">0</div>
+                </div>
+                <button type="submit" class="button">
+                    <img src="./play.svg" alt="play">
+                    Запустить таймер
+                </button>
+                <button type="stop" class="button">
+                  Остановить таймер
+              </button>
+            </form>
+        </section>
+    </main>
+  </body>
+</html>
